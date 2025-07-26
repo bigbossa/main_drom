@@ -291,7 +291,7 @@ export const UserCreateDialog = ({
       reader.onloadend = async () => {
         const base64data = reader.result as string;
         // ส่งไป API
-        const response = await fetch("http://localhost:3000/server/insert_image", {
+        const response = await fetch("https://back-api-dkd8.onrender.com/server/insert_image", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
